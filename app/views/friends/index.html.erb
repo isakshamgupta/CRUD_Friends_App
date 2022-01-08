@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<u><h1>Friends List</h1></u>
+<br>
+
+<div id="friends">
+  <% @friends.each do |friend| %>
+    <%= render friend %>
+      <hr>
+      <%= link_to "Show this friend", friend, class:"btn btn-outline-secondary" %>
+      <br><br>
+      
+  <% end %>
+
+</div>
+
+
